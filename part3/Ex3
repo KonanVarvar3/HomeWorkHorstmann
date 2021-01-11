@@ -1,0 +1,8 @@
+Supertype for String,  Scanner,  ImageOutputStream is Object.
+
+Any class can be a superclass for a subclass.
+A class can not be its own superclass.
+
+You can create a regular class that does not inherit, but in fact all classes inherit
+from the Object class. All other classes, even the ones we add to our project,
+are implicitly derived from the Object class. Any interface type is a subtype of Object.
