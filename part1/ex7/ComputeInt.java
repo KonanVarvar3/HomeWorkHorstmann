@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class ComputeInt {
 
     //Ex7
-    public void actionsWithNumbers() throws OutOfRangeException {
+    public void actionsWithNumbers(long number1, long number2) throws OutOfRangeException {
 
         Scanner scanner = new Scanner(System.in);
 
-        int num1 = (int) scanner.nextLong((int) 4294967295L);
-        int num2 = (int) scanner.nextLong((int) 4294967295L);
+        int num1 = Math.toIntExact(Integer.toUnsignedLong(Integer.parseInt(scanner.nextLine())));
+        int num2 = Math.toIntExact(Integer.toUnsignedLong(Integer.parseInt(scanner.nextLine())));
 
         if (Integer.toUnsignedLong(num1) < 0 || Integer.toUnsignedLong(num1) > 4294967295L ||
                 Integer.toUnsignedLong(num2) < 0 || Integer.toUnsignedLong(num2) > 4294967295L) {
