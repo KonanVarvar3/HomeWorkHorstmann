@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ComputeInt {
 
     //Ex7
-    public void actionsWithNumbers(long number1, long number2) throws OutOfRangeException {
+    public void actionsWithNumbers() throws OutOfRangeException {
 
         Scanner scanner = new Scanner(System.in);
 
